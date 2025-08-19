@@ -190,10 +190,12 @@ const About: React.FC<ValueCardProps> = () => {
           </div>
             
           <div className="md:w-1/2">
-            <img
+            <Image
               src="/core0.jpg"
               alt="Church congregation"
               className="rounded-4xl w-full h-auto object-cover"
+              width={300}
+              height={300}
             />
           </div>
         </div>
@@ -252,7 +254,7 @@ const About: React.FC<ValueCardProps> = () => {
       {/* Right Side Donation Form */}
       <div className="md:w-1/2 flex flex-col justify-center items-center bg-gradient-to-r from-pink-500 via-red-400 to-yellow-300 p-10">
         <h2 className="text-3xl font-bold mb-4 text-black">Donations and Tithing</h2>
-        <p className="text-sm mb-6 text-gray-800 text-center">
+        <p className="text-sm mb-6 text-gray-900 text-center">
           Give, and it will be given to you. A good measure, pressed down, shaken together and running over, will be poured into your lap.<br />
           
           Luke 6: 38
