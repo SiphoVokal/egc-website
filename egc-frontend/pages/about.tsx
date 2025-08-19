@@ -37,11 +37,11 @@ const About: React.FC<ValueCardProps> = () => {
  },
   { cardNumber: "03", 
     title: "Honor is our expression", 
-    description: "We are not saved by serving, but we are saved for serving. You were called to be free. You cannot serve God until you’ve been set by Jesus." 
+    description: "We are not saved by serving, but we are saved for serving. You were called to be free. You cannot serve God until you&apos;ve been set by Jesus." 
 },
   { cardNumber: "04", 
     title: "Joy is our decision", 
-    description: "Until you experience the transforming power of God’s grace in your life, you’re too ensalved by your own hurts, and hang ups to think about others."
+    description: "Until you experience the transforming power of God&apos;s grace in your life, you&apos;re too ensalved by your own hurts, and hang ups to think about others."
 },
   { cardNumber: "05", 
     title: "Generousity is our priviledge", 
@@ -77,12 +77,12 @@ const About: React.FC<ValueCardProps> = () => {
             {/* Text */}
             <div className="w-full lg:w-[65%] text-center lg:text-left my-auto">
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Our Pastors</h2>
-              <h3 className="text-lg sm:text-xl font-semibold mt-2">
+              <h3 className="text-lg sm:text-xl font-semibold mt-2 font-poppins">
                 Pastor Martin and Dr. Sphe Mgiba
               </h3>
 
               {/* First paragraph */}
-              <p className="mt-4 text-gray-700 leading-relaxed">
+              <p className="mt-4 text-gray-700 leading-relaxed font-poppins">
                 Ps Martin and Dr. Siphelele Mgiba, affectionately known as Dr. Sphe,
                 are founders and senior pastors of the urban, homely, and Word-filled Eternal Glory Church,
                 known for its vibrant worship and praise, and where thousands of young people find their spiritual home.
@@ -157,10 +157,10 @@ const About: React.FC<ValueCardProps> = () => {
             </h3>
             <p className="text-gray-700 leading-relaxed">
               At Eternal Glory Church, our vision is to raise a generation of believers
-              who walk boldly in the fullness of God’s glory. We are committed to
-              transforming lives through the revelation of Jesus Christ – empowering
+              who walk boldly in the fullness of God&apos;s glory. We are committed to
+              transforming lives through the revelation of Jesus Christ, empowering
               individuals to live with purpose, walk in divine authority, and bring
-              heaven to earth. We believe that every person is called to reflect God’s
+              heaven to earth. We believe that every person is called to reflect God&apos;s
               light in every sphere of life, and we exist to awaken that divine
               identity within them.
             </p>
@@ -185,7 +185,7 @@ const About: React.FC<ValueCardProps> = () => {
               of God is tangible, the Word of God is foundational, and love is our
               lifestyle. We are passionate about discipling believers, equipping leaders,
               and reaching the lost. Through passionate worship, sound biblical teaching,
-              and intentional outreach, we aim to make Jesus known – not just within the
+              and intentional outreach, we aim to make Jesus known, not just within the
               walls of the church, but in homes, schools, businesses, and beyond.
               We exist to bring eternal impact to everyday life.
             </p>

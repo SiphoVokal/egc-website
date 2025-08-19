@@ -18,7 +18,7 @@ const league = League_Script({ subsets: ['latin'], weight: ['400'], variable: '-
 const heroImage = "/collage.png";
 
 const cardLinks = [
-  { title: "I’m New", description: "Join our vibrant community of believers. Your search for a local church has come to an end.", href: "https://forms.gle/N6hjKrLdFgKPMfEc7", imageSrc: "/new.jpg" },
+  { title: "I&apos;m New", description: "Join our vibrant community of believers. Your search for a local church has come to an end.", href: "https://forms.gle/N6hjKrLdFgKPMfEc7", imageSrc: "/new.jpg" },
   { title: "Watch a Sermon", description: "Catch up on the word via YouTube, Glory podcasts and more.", href: "https://www.youtube.com/@eternalglorychurch", imageSrc: "/watch.jpg" },
   { title: "Ministries", description: "Growing in faith and fellowship", href: "/ministries", imageSrc: "/baptism.jpg" },
 ];

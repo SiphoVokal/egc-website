@@ -32,10 +32,10 @@ const Ministries: React.FC<MinistryCardProps> = () => {
                 and journey through life together.
 
                 These spaces are where we dive deeper into the Word, pray together, ask the tough questions, 
-                and support one another in real, meaningful ways. It’s more than a Bible study — it’s family.
-                It’s not just about Sundays — it’s about doing life together, every day.
+                and support one another in real, meaningful ways. It&apos;s more than a Bible study — it&apos;s family.
+                It&apos;s not just about Sundays — it&apos;s about doing life together, every day.
 
-                If you’ve been looking for community, a place to belong, or a space to be seen and known, GloryHubs are for you."
+                If you&apos;ve been looking for community, a place to belong, or a space to be seen and known, GloryHubs are for you."
               imageSrc="/core.jpg"
             />
         </div>
@@ -44,7 +44,7 @@ const Ministries: React.FC<MinistryCardProps> = () => {
               title="E-Hubbies"
               description="E-Hubbies are our online discipleship and community groups designed to connect you to spiritual family — 
               no matter where you are. We know life gets busy, and not everyone can attend in-person gatherings. 
-              That’s why E-Hubbies bring the power of community, the Word, and intentional discipleship right to your screen. 
+              That&apos;s why E-Hubbies bring the power of community, the Word, and intentional discipleship right to your screen. 
               
               Through regular online meetups, we grow together in faith, deepen our understanding of Scripture, 
               and hold each other accountable as we walk in purpose. 
@@ -63,23 +63,23 @@ const Ministries: React.FC<MinistryCardProps> = () => {
               From welcoming first-time visitors to running Sunday services, from packing food parcels to reaching communities in need — 
               Glory Squad make ministry happen.
               
-              It’s more than just volunteering — it’s ministry in motion. Every gift matters. Every role is significant. Every act of service is worship.
+              It&apos;s more than just volunteering — it&apos;s ministry in motion. Every gift matters. Every role is significant. Every act of service is worship.
               
-              If you’re ready to make an impact, grow in leadership, and be part of something bigger than yourself, Glory Squad is calling your name."
+              If you&apos;re ready to make an impact, grow in leadership, and be part of something bigger than yourself, Glory Squad is calling your name."
               imageSrc="/core.jpg"
             />
         </div>
         <div className="max-w-6xl mx-auto grid grid-cols-1 gap-8">
             <MinistryCard
               title="Glory Kidz"
-              description="Glory Kidz is our vibrant children’s ministry designed to nurture the faith of the next generation — 
+              description="Glory Kidz is our vibrant children&apos;s ministry designed to nurture the faith of the next generation — 
               one fun-filled, Spirit-led Sunday at a time!
               
               From toddlers to tweens, we create a safe, loving, and engaging environment where kids can learn about Jesus, 
               build friendships, and discover their identity in Christ. Through age-appropriate lessons, worship, storytelling, 
-              games, and crafts, children don’t just attend church — they experience it in a way they’ll never forget.
+              games, and crafts, children don&apos;t just attend church — they experience it in a way they&apos;ll never forget.
               
-              At Glory Kidz, your child will be seen, celebrated, and spiritually equipped to shine God’s glory in their world"
+              At Glory Kidz, your child will be seen, celebrated, and spiritually equipped to shine God&apos;s glory in their world"
               imageSrc="/core.jpg"
               reverse
             />
@@ -88,12 +88,12 @@ const Ministries: React.FC<MinistryCardProps> = () => {
             <MinistryCard
               title="NextGen Youth"
               description="NextGen is our youth and young adult ministry — a dynamic space where teenagers and young adults encounter God, grow in identity, 
-              and rise in purpose. In a world that’s constantly shifting, NextGen is where young people are grounded in truth, empowered by faith, 
+              and rise in purpose. In a world that&apos;s constantly shifting, NextGen is where young people are grounded in truth, empowered by faith, 
               and surrounded by real community. We gather to worship, learn, laugh, ask deep questions, and walk through life together — 
-              because growing up doesn’t mean growing away from God.
+              because growing up doesn&apos;t mean growing away from God.
               
-              Whether you’re in high school, varsity, or figuring out your next steps — NextGen is your tribe. It’s not just a youth group. 
-              It’s a movement of young leaders, creatives, thinkers, and dreamers who are called to shape the future with Christ at the centre."
+              Whether you&apos;re in high school, varsity, or figuring out your next steps — NextGen is your tribe. It&apos;s not just a youth group. 
+              It&apos;s a movement of young leaders, creatives, thinkers, and dreamers who are called to shape the future with Christ at the centre."
               imageSrc="/core.jpg"
             />
         </div>
@@ -101,10 +101,10 @@ const Ministries: React.FC<MinistryCardProps> = () => {
             <MinistryCard
               title="Outreach"
               description="Our Outreach Programs are how we put faith into action — loving our neighbours, lifting communities, 
-              and being the hands and feet of Jesus to those in need.Whether it’s feeding families, visiting shelters, 
+              and being the hands and feet of Jesus to those in need.Whether it&apos;s feeding families, visiting shelters, 
               running skills workshops, or responding to crisis, our heart is to serve with compassion, dignity, and hope. 
               Every outreach is an opportunity to extend grace beyond the church walls and bring real change to real lives. 
-              We don’t just talk about love — we show it.If you're passionate about social impact, justice, and being part of something greater, 
+              We don&apos;t just talk about love — we show it.If you're passionate about social impact, justice, and being part of something greater, 
               join us as we serve and rebuild communities — one act of kindness at a time"
               imageSrc="/core.jpg"
               reverse
@@ -119,7 +119,7 @@ const Ministries: React.FC<MinistryCardProps> = () => {
               and moments captured in the presence of the Holy Spirit, our desire is to lead people into deeper encounters with Jesus. 
               
               Our latest single, Praise Medley 2.0, has reached over 1 million streams on YouTube — 
-              and it's just the beginning. We’re humbled, grateful, and expectant for even more lives to be touched through our sound."
+              and it's just the beginning. We&apos;re humbled, grateful, and expectant for even more lives to be touched through our sound."
               imageSrc="/core.jpg"
             />
         </div>

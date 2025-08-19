@@ -15,20 +15,20 @@ const ServicesPage: React.FC = () => {
     {
       title: "Glory Kidz",
       description:
-        "Bring your little ones – if you've been looking for a vibrant, Christ-centered space for your children to learn, grow, and belong. Every Sunday on Campus.",
+        "Bring your little ones: if you've been looking for a vibrant, Christ-centered space for your children to learn, grow, and belong. Every Sunday on Campus.",
       imageSrc: "/kids.jpg",
       time: "Every Sunday 07:30, 09:30, 11:30, 2pm",
     },
     {
       title: "Wednesday Midweek Refill",
-      description: "18:30pm in person or online, join us for a time of prayer and deep dive in to scripture. We’d love to see you!",
+      description: "18:30pm in person or online, join us for a time of prayer and deep dive in to scripture. We&apos;d love to see you!",
       imageSrc: "/midRefill.jpg",
       time: "Wednesdays 18:30",
     },
     {
       title: "Plug Service",
       description:
-        "18:00pm in person or online on selected Sundays. We’d love to see you!",
+        "18:00pm in person or online on selected Sundays. We&apos;d love to see you!",
       imageSrc: "/plug.jpg",
       time: "Selected Sundays 18:00",
     },
