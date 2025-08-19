@@ -5,12 +5,10 @@ import Footer from "@/components/layout/Footer";
 import ValueCard from "@/components/common/ValueCard";
 import { ValueCardProps } from "@/interfaces";
 import Navbar from "@/components/layout/Navbar";
-import { Poppins, Pinyon_Script, Roboto, League_Script } from 'next/font/google'
+import { Poppins, Pinyon_Script } from 'next/font/google'
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '700'], variable: '--font-poppins' });
-const roboto = Roboto({ subsets: ['latin'], weight: ['400', '700'], variable: '--font-roboto' });
 const pinyon = Pinyon_Script({ subsets: ['latin'], weight: ['400'], variable: '--font-pinyon' });
-const league = League_Script({ subsets: ['latin'], weight: ['400'], variable: '--font-league' });
 
 const About: React.FC<ValueCardProps> = () => {
   const [isOpen, setIsOpen] = useState(false);

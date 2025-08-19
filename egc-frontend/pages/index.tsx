@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link"; // ✅ Added for internal navigation
 
 import Button from "@/components/common/Button";
 import CardLink from "@/components/common/CardLink";
@@ -8,12 +9,10 @@ import Navbar from "@/components/layout/Navbar";
 import VideoCard from "@/components/common/VideoCard";
 import Footer from "@/components/layout/Footer";
 
-import { Poppins, Pinyon_Script, Roboto, League_Script } from 'next/font/google'
+import { Poppins, Pinyon_Script } from 'next/font/google'
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '700'], variable: '--font-poppins' });
-const roboto = Roboto({ subsets: ['latin'], weight: ['400', '700'], variable: '--font-roboto' });
 const pinyon = Pinyon_Script({ subsets: ['latin'], weight: ['400'], variable: '--font-pinyon' });
-const league = League_Script({ subsets: ['latin'], weight: ['400'], variable: '--font-league' });
 
 const heroImage = "/collage.png";
 
@@ -22,8 +21,6 @@ const cardLinks = [
   { title: "Watch a Sermon", description: "Catch up on the word via YouTube, Glory podcasts and more.", href: "https://www.youtube.com/@eternalglorychurch", imageSrc: "/watch.jpg" },
   { title: "Ministries", description: "Growing in faith and fellowship", href: "/ministries", imageSrc: "/baptism.jpg" },
 ];
-
-
 
 const events = [
   { title: "Love on the Cross", date: "April 9, 2025", imageSrc: "/quotes.png" },
@@ -48,7 +45,6 @@ export default function Home() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  
   const handleOpenMap = () => {
     window.open(
       "https://www.google.com/maps/dir//Fourways+Junction,+White+Hills+Cl,+Lone+Hill,+Johannesburg,+2191/@-26.0127362,27.9294619,22815m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x1e957729018219d1:0xb1a960baf095586f!2m2!1d28.0118634!2d-26.0127596?entry=ttu&g_ep=EgoyMDI1MDgxMi4wIKXMDSoASAFQAw%3D%3D",
@@ -94,13 +90,14 @@ export default function Home() {
       </section>
 
       {/* Beliefs */}
-      <section className="bg-white px-4 sm:px-6  text-center">
+      <section className="bg-white px-4 sm:px-6 text-center">
         <h2 className="text-2xl sm:text-3xl md:text-6xl font-bold max-w-4xl pt-4 mx-auto">
           A church that believes in <br />
           <span className="text-black">Jesus</span>, a <span className="text-yellow-400">church that loves <br />People</span> and <span className="text-black">community</span>
         </h2>
         <p className="mt-4 text-gray-400">
-          To carry the Word, the Love, and the Mission into our communities. <a href="#" className="underline text-sm hover:text-red-600">see more</a>
+          To carry the Word, the Love, and the Mission into our communities.{" "}
+          <Link href="#" className="underline text-sm hover:text-red-600">see more</Link>
         </p>
         <p className="font-pinyon mt-2 text-[1.7rem] sm:text-[4rem] text-gray-100 max-w-5xl mx-auto text-start sm:text-end">you are always welcome here.</p>
       </section>
@@ -123,7 +120,7 @@ export default function Home() {
       </section>
 
       {/* Mission Section */}
-      <section className="flex flex-col  w-full">
+      <section className="flex flex-col w-full">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 pt-4 sm:pt-12 m-auto w-[90%] md:w-[85%]">
           <span className="text-sm pl-8 sm:py-16">
             At Eternal Glory we are <br />
@@ -170,7 +167,6 @@ export default function Home() {
           <Image src="/btm.png" alt="Bottom image" width={1200} height={300} className="w-full object-cover h-60" />
         </div>
       </section>
-
 
       {/* Events */}
       <section id="events" className="bg-yellow-300 max-w-full mx-auto mt-12 px-4 sm:px-6 py-12 relative z-0">

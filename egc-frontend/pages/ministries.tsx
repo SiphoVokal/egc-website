@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 import MinistryCard from "@/components/common/MinistryCard";
 import Footer from "@/components/layout/Footer";
-import { Poppins, Pinyon_Script, Roboto, League_Script } from 'next/font/google'
+import { Poppins, Pinyon_Script } from 'next/font/google'
 import { MinistryCardProps } from "@/interfaces";
 import Navbar from "@/components/layout/Navbar";
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '700'], variable: '--font-poppins' });
-const roboto = Roboto({ subsets: ['latin'], weight: ['400', '700'], variable: '--font-roboto' });
 const pinyon = Pinyon_Script({ subsets: ['latin'], weight: ['400'], variable: '--font-pinyon' });
-const league = League_Script({ subsets: ['latin'], weight: ['400'], variable: '--font-league' });
 
 const Ministries: React.FC<MinistryCardProps> = () => {
   return (
