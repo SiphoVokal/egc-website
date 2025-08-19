@@ -1,4 +1,21 @@
 @import "tailwindcss";
 
+@layer base {
+  :root {
+    --font-roboto: 'Poppins', 'Roboto' sans-serif;
+    --font-league: 'League Script', latin;
+    --font-league: 'Pinyon Script', cursive;
+  }
 
+  .font-roboto {
+    font-family: var(--font-roboto);
+  }
 
+  .font-pinyon {
+    font-family: var(--font-pinyon);
+  }
+
+  .font-pinyon {
+    font-family: var(--font-league);
+  }
+}

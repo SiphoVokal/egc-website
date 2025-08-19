@@ -1,20 +1,31 @@
-import { ButtonProps } from "@/interface";
+import React from "react";
+import { ButtonProps } from "@/interfaces";
 
-const Button = ({ buttonLabel, buttonSize, buttonBackgroundColor, action }: ButtonProps) => {
+// Centralized color styles
+const colorVariants: Record<string, string> = {
+  red: "bg-red-600 text-white border border-red-600 hover:bg-white hover:border-red-600 hover:text-black",
+  white: "bg-white text-red border border-red-600 hover:bg-red-600 hover:border-red-600 hover:text-white",
+  // Add more colors here without touching the component logic
+};
 
-  const backgroundColorClass = buttonBackgroundColor ? {
-    red: 'bg-red-600',
-    white: 'bg-white',
-  }[buttonBackgroundColor] : 'bg-slate-500'
-
+const Button: React.FC<ButtonProps> = ({
+  buttonLabel,
+  buttonSize = "",
+  buttonBackgroundColor = "",
+  action,
+}) => {
+  const colorClasses = colorVariants[buttonBackgroundColor] || colorVariants.white;
 
   return (
-    <button onClick={action} className={`${backgroundColorClass} 
-        ${buttonSize} px-6 py-2 text-sm font-semibold rounded-lg 
-        hover:${backgroundColorClass}/50 transition duration-300 text-white`}>
+    <button
+      onClick={action}
+      className={`font-semibold ${colorClasses} ${buttonSize} 
+                  transition duration-300 font-poppins rounded-full`}
+      type="button"
+    >
       {buttonLabel}
     </button>
-  )
-}
+  );
+};
 
 export default Button;
