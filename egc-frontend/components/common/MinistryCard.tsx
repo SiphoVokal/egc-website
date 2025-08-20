@@ -1,8 +1,9 @@
 import React from "react";
 import { MinistryCardProps } from "@/interfaces";
+import Image from "next/image";
 
 interface ExtendedProps extends MinistryCardProps {
-  reverse?: boolean; // flip layout
+  reverse?: boolean; 
 }
 
 const MinistryCard: React.FC<ExtendedProps> = ({ title, description, imageSrc, reverse }) => {
@@ -23,10 +24,12 @@ const MinistryCard: React.FC<ExtendedProps> = ({ title, description, imageSrc, r
 
         {/* Image section */}
         <div className="md:w-1/2">
-          <img
+          <Image
             src={imageSrc}
             alt={title}
             className="rounded-2xl w-full h-auto object-cover shadow-md"
+            width={300}
+            height={200}
           />
         </div>
       </div>

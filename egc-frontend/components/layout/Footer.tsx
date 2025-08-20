@@ -1,6 +1,6 @@
 // components/Footer.tsx
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
-
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Footer() {
@@ -67,11 +67,11 @@ export default function Footer() {
 
       {/* Footer Links */}
       <div className="max-w-6xl mx-auto mt-8 border-t border-gray-700 pt-4 flex flex-wrap gap-4 text-sm">
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="https://www.youtube.com/@eternalglorychurch">Sermons</a>
-        <a href="#">Connect with us</a>
-        <a href="#">Donate</a>
+        <Link href="/">Home</Link>
+        <Link href="/about">About</Link>
+        <Link href="https://www.youtube.com/@eternalglorychurch">Sermons</Link>
+        <Link href="#">Connect with us</Link>
+        <Link href="#">Donate</Link>
       </div>
     </footer>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { VideoCardProps } from "@/interfaces";
 
-const VideoCard: React.FC<VideoCardProps> = ({ videoId, title, href }) => {
+const VideoCard: React.FC<VideoCardProps> = ({ videoId, title }) => {
   return (
     <div className="rounded-4xl overflow-hidden bg-red-600 h-48">
       <Link href={`https://www.youtube.com/watch?v=${videoId}`} target="_blank" rel="noopener noreferrer">

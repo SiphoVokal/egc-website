@@ -19,7 +19,7 @@ const About: React.FC<ValueCardProps> = () => {
   const presetAmounts = [50, 100, 250, 1000, 5000];
 
   const handlePayment = () => {
-    // Normally you'd call your backend API that connects to Zappa
+    // Call backend API that connects to Zappa
     const paymentUrl = `https://zappa-payments.com/checkout?amount=${amount}&currency=ZAR`;
     window.open(paymentUrl, "_blank");
   };
@@ -80,14 +80,14 @@ const About: React.FC<ValueCardProps> = () => {
               </h3>
 
               {/* First paragraph */}
-              <p className="mt-4 text-gray-700 leading-relaxed font-poppins">
+              <p className={`${poppins.className} mt-4 text-gray-700 leading-relaxed font-poppins`}>
                 Ps Martin and Dr. Siphelele Mgiba, affectionately known as Dr. Sphe,
                 are founders and senior pastors of the urban, homely, and Word-filled Eternal Glory Church,
                 known for its vibrant worship and praise, and where thousands of young people find their spiritual home.
               </p>
 
               {/* Second paragraph with ... */}
-              <p className="mt-4 text-gray-700 leading-relaxed">
+              <p className={`${poppins.className} mt-4 text-gray-700 leading-relaxed font-poppins`}>
                 The kingdom-focused couple has dedicated their lives to leading thousands in their Christian walk
                 and relentlessly sacrificing for the spreading of the gospel and winning souls for the Kingdom of God{" "}
                 <button
@@ -99,7 +99,7 @@ const About: React.FC<ValueCardProps> = () => {
               </p>
 
               <p className="mt-6 italic font-pinyon text-2xl text-gray-900">You belong here!</p>
-              <p className="mt-6 text-center font-pinyon text-4xl sm:text-4xl lg:text-6xl font-light text-gray-200 italic relative z-0 -m-12">
+              <p className={`${pinyon.className} mt-6 text-center text-4xl sm:text-4xl lg:text-6xl font-light text-gray-200 italic relative z-0 -m-12`}>
             you are always welcome here!
           </p>
             </div>
@@ -142,18 +142,18 @@ const About: React.FC<ValueCardProps> = () => {
       <section className=" bg-white m-auto w-[85%]">
         
         <div className="relative z-10 top-14 left-4 text-center sm:text-start mb-11">
-          <h2 className="text-3xl sm:text-5xl font-poppins font-bold text-black relative z-10">
+          <h2 className={`${poppins.className}text-3xl sm:text-5xl font-poppins font-bold text-black relative z-10`}>
               Our core beliefs
           </h2>
-          <p className="text-gray-100 font-pinyon text-5xl sm:text-7xl italic relative -mt-6 z-0">that unite us</p>
+          <p className="text-gray-100 text-5xl font-pinyon sm:text-7xl italic relative -mt-6 z-0">that unite us</p>
         </div>
 
         <div className="relative z-10 flex flex-col md:flex-row items-center gap-4 sm:gap-12 mb-12">
           <div className="md:w-1/2 text-center md:text-left">
-            <h3 className="text-xl sm:text-2xl font-semibold text-black mb-4">
+            <h3 className={`${poppins.className} text-xl sm:text-2xl font-semibold text-black mb-4`}>
               To call many sons into glory
             </h3>
-            <p className="text-gray-700 leading-relaxed">
+            <p className={`${poppins.className} text-gray-700 leading-relaxed`}>
               At Eternal Glory Church, our vision is to raise a generation of believers
               who walk boldly in the fullness of God&apos;s glory. We are committed to
               transforming lives through the revelation of Jesus Christ, empowering
@@ -165,20 +165,22 @@ const About: React.FC<ValueCardProps> = () => {
           </div>
             
           <div className="md:w-1/2">
-            <img
+            <Image
              src="/core.jpg"
               alt="Worship scene"
               className="rounded-4xl w-full h-auto object-cover"
+              width={300}
+              height={200}
             />   
           </div>
         </div>
 
         <div className="flex flex-col md:flex-row-reverse items-center gap-6 mb-8">
           <div className="md:w-1/2 text-center md:text-left">
-            <h3 className="text-xl sm:text-2xl font-semibold text-black mb-4">
+            <h3 className={`${poppins.className} text-xl sm:text-2xl font-semibold text-black mb-4`}>
               To carry the Word, the love, and the mission into our communities.
             </h3>
-            <p className="text-gray-700 leading-relaxed">
+            <p className={`${poppins.className} text-gray-700 leading-relaxed`}>
               Our mission is to cultivate a Christ-centered community where the presence
               of God is tangible, the Word of God is foundational, and love is our
               lifestyle. We are passionate about discipling believers, equipping leaders,
@@ -244,10 +246,12 @@ const About: React.FC<ValueCardProps> = () => {
       <section className="min-h-screen flex flex-col md:flex-row">
       {/* Left Side Image */}
       <div className="md:w-1/2">
-        <img
+        <Image
           src="/pay.jpg"
           alt="Donations"
           className="w-full h-full object-cover"
+          width={300}
+          height={200}
         />
       </div>
 
@@ -342,8 +346,8 @@ const About: React.FC<ValueCardProps> = () => {
               ✖
             </button>
 
-            <h2 className="text-2xl font-bold mb-4">Our Pastors</h2>
-            <p className="text-gray-700 leading-relaxed">
+            <h2 className={`${poppins.className}text-2xl font-bold mb-4`}>Our Pastors</h2>
+            <p className={`${poppins.className} mt-4 text-gray-700 leading-relaxed font-poppins`}>
               Ps Martin is a seasoned preacher and teacher of the Word, 
               and has held several platforms across the nation, including his recently born podcast, 
               Urban Church Talk, where he generously shares knowledge on principles relating to kingdom planting, 
@@ -353,10 +357,10 @@ const About: React.FC<ValueCardProps> = () => {
               Outside of his undeniable contribution to the Kingdom of God, 
               Ps Martin is an admitted attorney of the High Court of South Africa by profession. 
               Ps Martin has also authored Joseph Generation, the Multiply Effect, 
-              which provide practical tools to navigate real life and worldly systems, God's way.<br />
+              which provide practical tools to navigate real life and worldly systems, God&apos;s way.<br />
               <br />
               Dr. Sphe is a medical practitioner by profession, 
-              with a particular passion for childhood development and women's health. 
+              with a particular passion for childhood development and women&apos;s health. 
               Despite the demands of her profession, Dr. Sphe is a mother to the Eternal Glory Church community, 
               and carries a deep burden for people, and an honest heart (and voice) for worship.<br />
               <br />

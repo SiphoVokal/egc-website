@@ -1,6 +1,5 @@
 "use client";
 
-import React, { useState } from "react";
 import ServiceCard from "@/components/common/ServiceCard";
 import ServiceTimes from "@/components/common/ServiceTimes";
 import { ServiceCardProps } from "@/interfaces";

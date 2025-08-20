@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import MinistryCard from "@/components/common/MinistryCard";
 import Footer from "@/components/layout/Footer";
 import { Poppins, Pinyon_Script } from 'next/font/google'
@@ -17,10 +16,14 @@ const Ministries: React.FC<MinistryCardProps> = () => {
       
       <section className="m-auto w-[85%]">
         <div className="relative z-10 top-22 left-4 text-start mb-2">
-          <h2 className="text-2xl sm:text-5xl font-poppins font-bold text-black relative z-10 leading-relaxed tracking-wide">
+          <h2 className=
+            {`${poppins.className} text-2xl sm:text-5xl font-poppins font-bold text-black relative z-10 leading-relaxed tracking-wide`}>
               Ministries and Groups
           </h2>
-          <p className="text-gray-200 font-pinyon text-4xl sm:text-7xl italic relative -mt-6 sm:-mt-12 z-0 mb-10 tracking-wide">that unite us</p>
+          <p className=
+            {`${pinyon.className} text-gray-200 text-4xl sm:text-7xl italic relative -mt-6 sm:-mt-12 z-0 mb-10 tracking-wide`}>
+              that unite us
+          </p>
         </div>
         <div className="max-w-6xl  grid grid-cols-1 pt-8 gap-8">
             <MinistryCard

@@ -129,7 +129,7 @@ export default function Home() {
               <span className="">God to reach </span><br /> 
               others for Christ.
             </span>
-            <p className="mt-1 text-[1.5rem] sm:text-[2.9rem] font-pinyon text-gray-100 text-start">
+            <p className={`${pinyon.className} mt-1 text-[1.5rem] sm:text-[2.9rem] text-gray-100 text-start`}>
               Calling many sons into glory.
             </p>
           </span>
@@ -141,8 +141,8 @@ export default function Home() {
 
         {/* Join Us Buttons */}
         <div className="text-center mb-6 px-4">
-          <h3 className="font-poppins font-bold text-3xl sm:text-4xl">Join us this Sunday</h3>
-          <p className="font-poppins text-xl mb-4">
+          <h3 className="font-poppins font-bold text-3xl sm:text-4xl" >Join us this Sunday</h3>
+          <p className={`${poppins.className} text-xl mb-4`}>
             07:30 · 09:30 · 11:30 · 14:00 at Fourways Junction, Lonehill. + Online
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
